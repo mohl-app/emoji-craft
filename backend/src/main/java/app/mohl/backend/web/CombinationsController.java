@@ -1,7 +1,7 @@
 package app.mohl.backend.web;
 
-import app.mohl.backend.model.Combination;
-import app.mohl.backend.service.CombinationService;
+import app.mohl.backend.data.Combination;
+import app.mohl.backend.services.CombinationsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
