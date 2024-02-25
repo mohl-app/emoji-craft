@@ -1,15 +1,26 @@
+<script>
+	import DragEmoji from './DragEmoji.svelte';
+</script>
+
 <div id="wrapper">
     <div id="header">
         <h1>Emoji Craft</h1>
     </div>
-    <div id="canvas"></div>
+    <div id="canvas">
+		</div>
     <div id="sidebar">
-        <span class="emoji">🙂</span>
+        <span class="emoji" on:dblclick={() => alert('hi')}>🙂</span>
         <span class="emoji">🙁</span>
         <span class="emoji">😤</span>
         <span class="emoji">😐</span>
     </div>
 </div>
+
+<DragEmoji>
+	<h1>
+		🙂
+	</h1>
+</DragEmoji>
 
 <style>
     #wrapper {
