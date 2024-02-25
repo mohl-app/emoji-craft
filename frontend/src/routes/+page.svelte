@@ -1,44 +1,49 @@
 <div id="wrapper">
     <div id="header">
-        <h1>Header</h1>
+        <h1>Emoji Craft</h1>
     </div>
-    <div id="canvas">
-        <h2>Canvas</h2>
-        <p>Content goes here</p>
-    </div>
+    <div id="canvas"></div>
     <div id="sidebar">
-        <h3>Sidebar</h3>
-        <p>Sidebar goes here</p>
+        <span class="emoji">🙂</span>
+        <span class="emoji">🙁</span>
+        <span class="emoji">😤</span>
+        <span class="emoji">😐</span>
     </div>
 </div>
 
 <style>
     #wrapper {
-        background-color: #111;
+        background-color: #222;
         display: grid;
         grid-template-columns: 4fr 1fr;
-        grid-template-rows: 100px 1fr;
+        grid-template-rows: 6rem 1fr;
         grid-template-areas: "header header" "canvas sidebar";
         height: 100vh;
     }
 
     #header {
-        color: #eee;
+        color: #ddd;
         grid-area: header;
+        margin: auto;
     }
 
     #canvas {
-        color: #eee;
+        color: #ddd;
         grid-area: canvas;
-        background-color: #111;
-        border: black 1px solid;
+        background-color: #222;
+        border: #ddd 1px solid;
         height: 100%;
     }
 
     #sidebar {
-        color: #eee;
+        color: #ddd;
         grid-area: sidebar;
-        background-color: #111;
+        background-color: #222;
+        border: #ddd 1px solid;
         height: 100%;
+    }
+    .emoji {
+        font-size: 4rem;
+        padding: .5rem;
     }
 </style>
